@@ -17,7 +17,7 @@ exports.handler = async (event, context, callback) => {
 
 function cb() {
   return new Promise(resolve => {
-    apiInstance.collectionsGet(function(a,b,c){
+    apiInstance.collectionsGet(1,function(a,b,c){
       resolve(b)
     });
   });

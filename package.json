@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "estuary_api": "https://gitpkg.now.sh/snissn/estuary-swagger-clients/javascript?main"
+    "estuary_api": "^0.0.0"
   }
 }

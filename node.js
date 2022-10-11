@@ -18,7 +18,7 @@ const api = util.promisify(apiInstance.collectionsGet)
 
 function cb() {
   return new Promise(resolve => {
-    apiInstance.collectionsGet(function(a,b,c){
+    apiInstance.collectionsGet(1,function(a,b,c){
       resolve(b)
     });
   });
@@ -29,7 +29,8 @@ function cb() {
   const data = await cb()
   console.log(data)
 
-  apiInstance.collectionsGet(function(result){
+  //either method works
+  apiInstance.collectionsGet(1,function(error,result){
     console.log(result);
   });
 
